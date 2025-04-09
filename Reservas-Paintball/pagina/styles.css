@@ -1,0 +1,657 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: Kanit;
+
+  
+}
+#fondo{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.hidden {
+    display: none;
+}
+
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  padding:10px;
+  font-family: Kanit;
+  letter-spacing:1px;
+  width: 200px;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  margin-inline:auto;
+  cursor: pointer;
+  
+  
+}
+
+
+
+#botonIniciarSesion{
+  position:absolute;
+  right: 0;
+  margin-right: 10px;
+  background-color: rgba(172, 223, 138);
+  
+}
+
+
+
+
+#botonIniciarSesion:hover{
+  background-color: rgb(69, 88, 56);
+  color: white;
+}
+
+#nombreSesion{
+  position:absolute;
+  right:0;
+  padding-right: 10px;
+
+}
+#nombreSesion img{
+  margin-right: 5px;
+  cursor:pointer;
+}
+
+nav ul{
+  list-style: none;
+  margin: 10px auto;
+  margin-bottom:0px;
+  text-align: center;
+  justify-content: center;
+}
+
+nav ul li{
+  text-decoration: none;
+  display:inline-block;
+  margin-inline:50px;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px 15px;
+  color:rgba(26, 23, 23, 0.781);
+}
+nav ul li:hover{
+  color:black;
+}
+
+.zoom{
+  transition: transform 0.3s ease; 
+}
+
+.zoom:hover{
+  transform: scale(1.05);
+}
+button{
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+#registrarse, #iniciar_sesion{
+  border: solid 1px rgb(25, 58, 6);
+  border-radius: 10px;
+  height: auto;
+  width: 250px;
+  background-color:  rgba(146, 187, 118);
+  text-align: center;
+  z-index: 999;
+  position:fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.900);
+  
+}
+#registrarse input, #iniciar_sesion input{
+  border-radius: 10px;
+  border:1px solid black;
+  padding-left: 5px;
+  width: 190px;
+}
+
+#oscuridad{
+  position: fixed;
+  width: 10000px;
+  height: 10000px;
+  background-color: black;
+  z-index: 10;
+  opacity:0.5;
+}
+
+
+#parteArriba{
+  position:relative;
+  width: 100%;
+  background-color: rgba(146, 187, 118, 0.6);
+  user-select: none;
+
+}
+
+#_reserva{
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  border-bottom: 4px solid  rgb(157, 216, 176);
+  background-color: rgba(74, 63, 36, 0.493);
+
+}
+
+#_reserva img{
+  width: 100%;
+  height: auto;
+}
+
+#derecha_reserva{
+  position: absolute;
+  right: 0;
+  width: 600px;
+  justify-content: center;
+  text-align: center; 
+  padding-right: 20px;
+}
+
+#derecha_reserva p{
+  color:white;
+  font-size: 25px;
+}
+
+#derecha_reserva button{
+  font-size: 25px;
+  border-radius: 15px;
+  padding-inline: 15px;
+  background-color: rgba(146, 187, 118, 0.432);
+}
+
+#derecha_reserva button:hover{
+  background-color: rgb(32, 160, 192);
+  color: white;
+}
+
+
+#campos_tiro{
+  border: 3px solid rgb(157, 216, 176);
+  border-radius: 15px;
+  margin: 30px;
+  background-color: rgba(74, 63, 36, 0.214);
+  color:white;
+  cursor:default;
+  
+}
+
+
+
+
+
+#campos{
+  display: flex;
+}
+
+#campos img{
+  width: 50%;
+  height: 500px;
+  margin: 25px;
+  border: 2px solid white;
+  border-radius: 10px;
+  max-width: 900px;
+
+
+}
+
+#campos div{
+  width: 100%;
+  align-items: center;
+}
+
+#campos div div{
+  font-size:20px;
+  font-weight: bolder;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+  right: 0;
+  text-shadow: 0px 4px 8px rgb(0, 0, 0);
+  transform: translateY(-30px);
+}
+
+#campos div div h3{
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+	-webkit-text-stroke: 0.5px #ffffff;
+	text-shadow: 0px 4px 8px rgb(0, 0, 0);
+  transform: translateY(-150px);
+  
+}
+
+
+
+
+.flexeo{
+  display: flex;
+}
+
+.botonDesplazamiento{
+  margin:0;
+  font-family: century gothic,arial;
+  border: none;
+  border-radius: 0px;
+  color:white;
+  font-size: 35px;
+  font-weight: bolder;
+  z-index:10;
+  
+
+}
+
+#botonDerecha{
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0));
+  border-bottom-right-radius:12px;
+  border-top-right-radius:12px;
+
+}
+
+#botonIzquierda{
+  height: 553px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0));
+  position:absolute;
+  border-top-left-radius:12px;
+  border-bottom-left-radius:12px;
+  
+}
+
+#botonDerecha, #botonIzquierda {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#campos_tiro:hover #botonDerecha,
+#campos_tiro:hover #botonIzquierda {
+  opacity: 1;
+  display: block;
+}
+
+ 
+
+#quienes_somos{
+  color:black;
+  background-color: rgba(74, 63, 36, 0.214);
+  margin: 40px 30px;
+  border: 3px solid rgb(157, 216, 176);
+  border-radius: 15px;
+}
+
+#quienes_somos h2{
+  cursor:default;
+  padding-top:15px;
+  padding-bottom:30px;
+  font-size:40px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+	-webkit-text-stroke: 1px #000000;
+	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.397);
+
+  font-weight: bolder;
+}
+
+
+.container-qs{
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  padding:10px;
+  
+}
+.container-qs div{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.container-qs div div{
+  height: 150px;
+  display:inline-block;
+}
+
+.container-qs p{
+  width: 300px;
+
+  
+}
+.container-qs img{
+  
+  width: 60px;
+  height: 60px;
+}
+
+
+
+#ubicacion{
+  display: flex;
+  padding:20px;
+  height: 100%;
+}
+
+#ubicacionGeneral{
+  color: white;
+  background-color: rgba(74, 63, 36, 0.214);
+  border: 3px solid rgb(157, 216, 176);
+  border-radius: 15px;
+  margin: 30px;
+  cursor:default;
+}
+
+
+#infoUbicacion{
+  font-size:20px;
+  font-weight: bolder;
+  width: 33%;
+  color: white;  
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+#infoUbicacion img{
+  width: 30px;
+  height: 30px;
+  cursor:pointer;
+}
+
+
+#infoUbicacion h3{
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+	-webkit-text-stroke: 0.5px #ffffff;
+	text-shadow: 0px 4px 8px rgb(0, 0, 0);
+  transform: translateY(-160px); 
+  margin-inline: auto;
+}
+
+#infoUbicacion div{
+  display: flex;
+  margin-inline: auto;
+  transform: translateY(-30px); 
+
+}
+
+#map{
+  width: 33%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#map iframe{
+  border-radius: 15px;
+}
+
+#imgsUbicacion{
+  width: 33%;
+  margin-top: auto;
+  margin-bottom:auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+}
+
+#imgsUbicacion img{
+  width: 330px;
+  height: 280px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 2px solid white;
+}
+
+
+#puntos{
+  
+  margin-inline: auto;
+
+  border-radius: 10px;
+  cursor: default;
+  
+}
+#puntos img{
+  width: 100px;
+  height: 70px;
+  margin-inline:5px;
+  cursor: pointer;
+  
+}
+
+select{
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+#reservaFormulario{
+  margin-top: 10px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.712);
+  border-radius: 10px;
+  width: 350px;
+  height: auto;
+  background-color:  rgb(243, 255, 235);
+  text-align: center;
+  margin-inline: auto;
+  justify-content: center;
+  z-index: 999;
+  position: relative;
+}
+
+#reservaFormulario input, select{
+  border: black 1px solid;
+}
+select{
+  border-radius: 30px;
+}
+
+#fecha{
+  border-radius: 30px;
+}
+
+
+.transparencia-qs{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0));
+}
+
+#nombreSesion{
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+#nombreSesion img{
+  
+  width: 30px;
+  height: 30px;
+}
+#nombreSesion p{
+  width: auto;
+}
+
+
+.fondo-tiro{
+  background-image: url("imagenes/fondoCamposTiro.jpg");
+  background-size:cover;
+  border-radius: 15px;
+  background-attachment: fixed;
+}
+
+.fondo-ubi{
+  background-attachment: fixed;
+  background-image: url("https://images4.alphacoders.com/552/thumb-1920-552002.jpg");
+  /* background-image: url("https://images4.alphacoders.com/552/thumb-1920-552002.jpg"); */
+  background-size:cover;
+  width: auto;
+  border-radius: 15px;
+
+}
+
+.fondo-qs{
+  background-attachment: fixed;
+  background-image: url("https://img.freepik.com/vector-gratis/fondo-textura-pared-sucia-pincel_1409-2916.jpg");
+  background-size:cover;
+  border-radius: 15px;
+
+}
+
+.fondo-pf{
+  background-attachment: fixed;
+  background-image: url("imagenes/fondoPF.jpg");
+  background-size:cover;
+  border-radius: 15px;
+  
+}
+.oscurecer{
+  filter: brightness(0.5);
+}
+
+#boton_ver_reservas{
+  position:absolute;
+  right: 0;
+  margin-top: 70px;
+  margin-right: 65px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding:5px;
+  width: 100px;
+  z-index: 11;
+  border: 1px solid black;
+}
+#cerrar_sesion{
+  position:absolute;
+  right: 0;
+  margin-top: 140px;
+  margin-right: 65px;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding:5px;
+  width: 100px;
+  border: 1px solid black;
+  z-index: 11;
+  border-top: none;
+
+}
+#preguntas_frecuentes{
+  border: 3px solid rgb(157, 216, 176);
+  border-radius: 15px;
+  margin: 30px; 
+  background-color: rgba(74, 63, 36, 0.214);
+  color: white;
+  
+}
+
+.fondo-pf h2{
+  font-size:40px;
+  background-color: rgba(0, 0, 0, 0.427);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+	-webkit-text-stroke: 0.5px #ffffff;
+	text-shadow: 0px 4px 8px rgb(0, 0, 0);
+}
+
+.container-pf{
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border: 1px solid white;
+  border-bottom: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pregunta{
+  border-bottom: white 1px solid;
+
+}
+
+.pregunta h3{
+  cursor: pointer;
+  margin-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bolder;
+  user-select: none;
+
+  
+
+}
+.pregunta p{
+  border-top: white 1px solid;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.35);
+
+  
+}
+.zoomP{
+  transition: font-size 0.3s ease; 
+}
+
+.zoomP:hover{
+  font-size: 19.5px;
+}
+
+.tabla_reservas{
+  background-attachment: fixed;
+  background-image: url("https://img.freepik.com/fotos-premium/textura-metal-blanco-transparente-tabla-chapa-acero_43429-38.jpg");
+  background-size:cover;
+  margin-left: auto;
+  margin-top: 25px;
+  border-radius: 10px;
+  border: 2px solid black;
+  border-collapse: collapse;
+  background-color: inherit;
+  margin-right: 0;
+}
+.reservas{
+  display:flex;
+}
+
+.tabla_reservas td,th{
+  border: 1px solid rgb(0, 0, 0);
+  padding:5px;
+  position:relative;
+}
+
+.botones {
+  margin-right: auto;
+  margin-top: 60px;
+
+}
+.botones button{
+  display:flex;
+  flex-direction: column;
+  margin:5px;
+}
+

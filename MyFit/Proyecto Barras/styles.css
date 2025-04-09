@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: Outfit;
+}
+
+button{
+    cursor:pointer;
+}
+
+.zoom{
+    transition: transform 0.3s ease; 
+}
+
+.zoom:hover{
+    transform: scale(1.05);
+}
+
+.hidden{
+    display: none;
+}
+.flexeo{
+    display: flex;
+}
+.centrado{
+    text-align: center;
+}
+
+
+#oscuridad{
+    position: fixed;
+    width: 10000px;
+    height: 10000px;
+    background-color: black;
+    z-index: 10;
+    opacity:0.5;
+}
+  
+#ingresoMateriales{
+    flex-direction: column;
+    z-index: 999;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: rgb(182, 182, 182);
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 300px;
+    text-align: center;
+}
+#ingresoMateriales p {
+    font-size: 25px;
+    border-bottom: 1px solid black;
+}
+
+#formFuncional{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#formFuncional input, select, button{
+    border: black solid 2px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding:5px;
+}
+#tipoMaterial{
+    width: 154px;
+}
+#cantidad{
+    width: 140px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+header{
+    border-bottom: 2px solid black;
+    text-align:center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+#botones{
+    border: black solid 3px;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+#botones a{
+    width: 190px;  
+    padding: 20px;
+    cursor:pointer;
+}
+#botones a:hover{
+    background-color: rgba(219, 218, 218, 0.8);
+}
+
+#btnMateriales{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#btnStock{
+    border-top: solid 1px black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#btnFabricar{
+    border-bottom: black 1px solid;
+    border-top: black 1px solid;
+}
+#btnCrearKit{
+    border-bottom: black 1px solid;
+}
+
+button{
+    cursor: pointer;
+}
+
+#divForm{
+    display: flex;
+    align-items: center;
+}
+#formFabricar{
+    width: 500px;
+    height: 300px;
+    border: 3px black solid;
+    background-color: rgb(199, 199, 199);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+#formFabricar h2{
+    margin-bottom: 25px;
+}
+
+#tipo_cantidad{
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+
+#tipoBarra {
+    width: 150px;
+    height: 35px;
+    margin-inline: auto;
+    border: black solid 2px;
+    border-radius: 15px;
+}
+
+#cantidadFabricar{
+    width: 50px;
+    height: 31px;
+    border: black solid 2px;
+    border-radius: 15px;
+    padding-left:5px;
+}
+
+#botonFabricar{
+    width: 100px;
+}
+
+#tipo_cantidad{
+    display: flex;
+    align-items: center;
+}
+
+#div_cantidad, #div_barra{
+    display: flex;
+    margin-inline: 20px;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    margin-bottom: auto;
+}   
+
+
+#cantidadConResta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+#cantidadMaterialesFabricar{
+    border: 2px solid black;
+    padding: 5px 10px;
+    width: 40px;
+}
+
+#resta{
+    position: absolute;
+    right: 170px;
+    color: red;
+}
+
+.tabla td,th{
+    border: 1px solid rgb(0, 0, 0);
+    padding:5px;
+    position:relative;
+}
+
+.tabla{
+    background-attachment: fixed;
+    background-size:cover;
+    border-radius: 10px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: inherit;
+    margin-inline: auto;
+    margin-bottom:20px;
+    margin-top:5px;
+
+}
+
+.tabla td,th{
+    border: 1px solid rgb(0, 0, 0);
+    padding:5px;
+    position:relative;
+}
+
+#formArmar{
+    width: 500px;
+    height: 300px;
+    border: 3px black solid;
+    background-color: rgb(199, 199, 199);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cont-kit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#formCrear{
+    width: 500px;
+    height: 380px;
+    border: 3px black solid;
+    background-color: rgb(199, 199, 199);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formCrear input{
+    border: black solid 2px;
+
+    border-radius: 15px;
+    padding:5px;
+}
+#formArmar h2{
+    margin-bottom: 50px;
+}
+#formCrear h2{
+    margin-bottom: 3px;
+}
+
+#nombreKit{
+
+    margin-bottom: 10px;
+
+}
+.container-flex{
+    display: flex;
+    margin: 5px;
+    gap: 10px;
+}
+.container-flex input{
+    width: 30px;
+    
+}
+.container-flex label{
+    width: 120px;
+}
